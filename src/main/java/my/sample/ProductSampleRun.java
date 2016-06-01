@@ -14,7 +14,7 @@ public class ProductSampleRun {
 
     public void execute() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext(
-                "applicationContext.xml");
+            "applicationContext.xml");
         MultiThreadService multiThreadService = ctx.getBean(MultiThreadService.class);
 
         multiThreadService.execute();
